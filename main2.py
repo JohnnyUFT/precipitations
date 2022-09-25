@@ -1,43 +1,50 @@
+# Caso 2: utilizacao de .csv unico com dados de varios locais
+# este caso deve ser utilizado a menos que o arquivo 'data/precipitacao_all'
+# esteja devidamente limpo e organizado.
+
 import os
-import csv
 import re
-import pandas as pd
-from sqlalchemy import create_engine
+from bd_config import create_connection, insert_into_local, insert_into_data, close_connection
 
+DB_NAME = os.environ.get('DB_NAME')
+PATH = os.environ.get('PATH_DATA')
+FILE = os.environ.get('FILE_NAME')
 
-def get_meta_data(row):
-    return row[0].split(': ')[1].replace(' ', '').replace(':', '')
+def clean_data(row):
+    # return row[0].split(': ')[1].replace(' ', '').replace(':', '')
+    return row[0].split(': ')[1].replace(':', '')
+
+def remove_break_line(row):
+    return row.replace('\n', '')
 
 def read_file():
-    PATH = os.environ.get('PATH_DATA')
-    FILE = os.environ.get('FILE_NAME')
     FILE_READ = 0
     ROW_NUMBER = 0
+    
+    conn = create_connection(DB_NAME)
     
     try:
         file_to_read = f'{PATH}\\{FILE}'
         with open(file_to_read, mode="r") as infile:
-            table_01 = []
-            table_02 = []
 
-            pd_local = pd.DataFrame()
-            pd_data = pd.DataFrame()
-
-            for line in infile:
-                line_data = re.split(',|;', line)
-                print('\n', line_data)
-
-                # if(ROW_NUMBER >= 0 and ROW_NUMBER < 9):
-                #     print('\nfirst', line_data)
-                #     table_01.append(line_data)
-                # elif(ROW_NUMBER >= 11 and ROW_NUMBER < 23):
-                #     print('\nsecond', line_data)
-                #     table_02.append(line_data)
+            for row in infile:
+                row_data = re.split(',|;', row)
+                if row_data[0].startswith('Nome:'):
+                    row_data = clean_data(row_data)
+                    # insert tabela local
+                    insert_into_local(conn, row_data)
+                elif row_data[0].startswith('Data'):
+                    continue
+                elif row_data[0].startswith('201', 0, 4):
+                    # insert tabela data
+                    insert_into_data(conn, tuple(row_data))
+                
 
                 ROW_NUMBER += 1
                 
                 if ROW_NUMBER >= 30:  # just for fun
-                    return []
+                    close_connection(conn)
+                    return None
 
         # sucesso ao fazer a leitura do arquivo: incrementa FILE_NUMBER
         FILE_READ += 1
@@ -45,6 +52,9 @@ def read_file():
     except BaseException:
         print('Erro ao ler arquivo ', file_to_read)
         print('Qtd arquivos lidos com sucesso: ', FILE_READ)
+        
+        close_connection(conn)
+        
         return []  # TODO: remover
 
 
