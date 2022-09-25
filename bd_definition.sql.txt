@@ -1,0 +1,16 @@
+CREATE TABLE "local" (
+	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	nome TEXT(64) NOT NULL,
+	--CONSTRAINT local_PK PRIMARY KEY (id)
+);
+
+CREATE TABLE "data" (
+	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	data_medicao TEXT NOT NULL,
+	precipitacao_total INTEGER,
+	mensal_aut_mm INTEGER,
+	temp_media INTEGER,
+	mensal_aut_c INTEGER,
+	--CONSTRAINT data_PK PRIMARY KEY (id),
+	CONSTRAINT data_FK FOREIGN KEY (id) REFERENCES "local"(id)
+);
