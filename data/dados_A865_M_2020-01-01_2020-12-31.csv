@@ -1,0 +1,24 @@
+Nome: LAGES
+Codigo Estacao: A865
+Latitude: -27.80222222
+Longitude: -50.33555555
+Altitude: 952.7
+Situacao: Operante
+Data Inicial: 2020-01-01
+Data Final: 2020-12-31
+Periodicidade da Medicao: Mensal
+
+Data Medicao;NUMERO DE DIAS COM PRECIP. PLUV, MENSAL (AUT)(número);PRECIPITACAO TOTAL, MENSAL (AUT)(mm);PRESSAO ATMOSFERICA, MEDIA MENSAL (AUT)(mB);TEMPERATURA MEDIA, MENSAL (AUT)(°C);VENTO, VELOCIDADE MAXIMA MENSAL (AUT)(m/s);VENTO, VELOCIDADE MEDIA MENSAL (AUT)(m/s);
+2020-01-31;17;39,8;905,948206;20,574015;8,2;3,192172;
+2020-02-29;4;null;null;null;8;null;
+2020-03-31;null;null;null;null;6,4;null;
+2020-04-30;null;null;null;null;9,3;null;
+2020-05-31;null;null;null;null;10,1;null;
+2020-06-30;null;null;null;null;9,7;null;
+2020-07-31;null;null;null;null;12,4;null;
+2020-08-31;null;null;null;null;8,1;null;
+2020-09-30;null;null;null;null;12,5;null;
+2020-10-31;null;null;null;null;8,5;null;
+2020-11-30;null;null;null;null;6,9;null;
+2020-12-31;null;null;null;null;9,4;null;
+

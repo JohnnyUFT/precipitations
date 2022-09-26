@@ -1,0 +1,24 @@
+Nome: SANTO ANTONIO DO LESTE
+Codigo Estacao: A931
+Latitude: -14.92777777
+Longitude: -53.8836111
+Altitude: 664.21
+Situacao: Operante
+Data Inicial: 2020-01-01
+Data Final: 2020-12-31
+Periodicidade da Medicao: Mensal
+
+Data Medicao;NUMERO DE DIAS COM PRECIP. PLUV, MENSAL (AUT)(número);PRECIPITACAO TOTAL, MENSAL (AUT)(mm);PRESSAO ATMOSFERICA, MEDIA MENSAL (AUT)(mB);TEMPERATURA MEDIA, MENSAL (AUT)(°C);VENTO, VELOCIDADE MAXIMA MENSAL (AUT)(m/s);VENTO, VELOCIDADE MEDIA MENSAL (AUT)(m/s);
+2020-01-31;null;null;936,784543;24,696236;7;2,062366;
+2020-02-29;null;null;937,647671;24,136125;6,8;1,881369;
+2020-03-31;null;null;937,335753;24,422849;7,8;1,55914;
+2020-04-30;null;null;939,101944;24,227222;6,2;1,393611;
+2020-05-31;3;null;940,474846;21,906636;7,4;1,666358;
+2020-06-30;null;0;940,518103;23,250298;6,1;1,45227;
+2020-07-31;null;null;940,23893;23,548288;7;1,839364;
+2020-08-31;null;null;null;null;7,4;null;
+2020-09-30;null;null;null;null;7,2;null;
+2020-10-31;null;null;null;null;4,9;null;
+2020-11-30;null;null;null;null;7,9;null;
+2020-12-31;null;null;null;null;8,5;null;
+

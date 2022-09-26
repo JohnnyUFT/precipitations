@@ -1,0 +1,24 @@
+Nome: ARAGUATINS
+Codigo Estacao: A044
+Latitude: -5.6436111
+Longitude: -48.11194444
+Altitude: 130.71
+Situacao: Pane
+Data Inicial: 2020-01-01
+Data Final: 2020-12-31
+Periodicidade da Medicao: Mensal
+
+Data Medicao;NUMERO DE DIAS COM PRECIP. PLUV, MENSAL (AUT)(número);PRECIPITACAO TOTAL, MENSAL (AUT)(mm);PRESSAO ATMOSFERICA, MEDIA MENSAL (AUT)(mB);TEMPERATURA MEDIA, MENSAL (AUT)(°C);VENTO, VELOCIDADE MAXIMA MENSAL (AUT)(m/s);VENTO, VELOCIDADE MEDIA MENSAL (AUT)(m/s);
+2020-01-31;21;401,4;996,491816;26,439732;6;1,590179;
+2020-02-29;15;null;996,783877;26,617754;5,4;1,552899;
+2020-03-31;15;null;null;26,341477;5,6;null;
+2020-04-30;11;null;null;null;4,5;null;
+2020-05-31;5;null;null;null;null;null;
+2020-06-30;null;null;null;null;null;null;
+2020-07-31;null;null;null;null;null;null;
+2020-08-31;null;null;null;null;null;null;
+2020-09-30;null;null;null;null;null;null;
+2020-10-31;2;null;null;null;null;null;
+2020-11-30;4;null;null;null;5,6;null;
+2020-12-31;4;null;null;26,830556;4,3;null;
+

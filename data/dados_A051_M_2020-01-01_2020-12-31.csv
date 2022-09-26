@@ -1,0 +1,24 @@
+Nome: PIUM
+Codigo Estacao: A051
+Latitude: -10.47694443
+Longitude: -49.62944443
+Altitude: 161
+Situacao: Operante
+Data Inicial: 2020-01-01
+Data Final: 2020-12-31
+Periodicidade da Medicao: Mensal
+
+Data Medicao;NUMERO DE DIAS COM PRECIP. PLUV, MENSAL (AUT)(número);PRECIPITACAO TOTAL, MENSAL (AUT)(mm);PRESSAO ATMOSFERICA, MEDIA MENSAL (AUT)(mB);TEMPERATURA MEDIA, MENSAL (AUT)(°C);VENTO, VELOCIDADE MAXIMA MENSAL (AUT)(m/s);VENTO, VELOCIDADE MEDIA MENSAL (AUT)(m/s);
+2020-01-31;26;332;990,13172;26,05672;5,5;1,316129;
+2020-02-29;20;219,8;990,51681;26,00546;5,7;1,272845;
+2020-03-31;26;301,6;990,373118;25,826613;4,1;1,245027;
+2020-04-30;15;273,6;991,046667;26,464583;5;1,22375;
+2020-05-31;3;27,4;991,94145;26,186746;4,3;1,235268;
+2020-06-30;1;null;null;null;4,3;null;
+2020-07-31;null;null;null;null;5,2;null;
+2020-08-31;null;null;null;null;4,2;null;
+2020-09-30;null;null;null;null;4,9;null;
+2020-10-31;null;null;null;null;5,1;null;
+2020-11-30;null;null;null;null;6,3;null;
+2020-12-31;null;null;null;null;5;null;
+

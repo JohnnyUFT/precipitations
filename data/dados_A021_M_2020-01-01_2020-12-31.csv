@@ -1,0 +1,24 @@
+Nome: ARAGUAINA
+Codigo Estacao: A021
+Latitude: -7.10388888
+Longitude: -48.20111111
+Altitude: 230.76
+Situacao: Operante
+Data Inicial: 2020-01-01
+Data Final: 2020-12-31
+Periodicidade da Medicao: Mensal
+
+Data Medicao;NUMERO DE DIAS COM PRECIP. PLUV, MENSAL (AUT)(número);PRECIPITACAO TOTAL, MENSAL (AUT)(mm);PRESSAO ATMOSFERICA, MEDIA MENSAL (AUT)(mB);TEMPERATURA MEDIA, MENSAL (AUT)(°C);VENTO, VELOCIDADE MAXIMA MENSAL (AUT)(m/s);VENTO, VELOCIDADE MEDIA MENSAL (AUT)(m/s);
+2020-01-31;23;183,6;985,271237;25,42621;3,5;,44207;
+2020-02-29;21;254,4;985,450796;25,413535;3,6;,419074;
+2020-03-31;25;582,2;985,332258;25,580645;3,2;,39328;
+2020-04-30;20;241,6;985,885417;25,719916;3,4;,387023;
+2020-05-31;3;null;null;26,733823;3,9;null;
+2020-06-30;null;null;null;null;null;null;
+2020-07-31;null;null;null;null;null;null;
+2020-08-31;null;null;null;null;null;null;
+2020-09-30;null;null;null;null;null;null;
+2020-10-31;null;null;null;null;null;null;
+2020-11-30;null;null;null;null;null;null;
+2020-12-31;null;null;null;null;null;null;
+
