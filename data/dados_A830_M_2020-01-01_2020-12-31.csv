@@ -1,0 +1,24 @@
+Nome: SAO BORJA
+Codigo Estacao: A830
+Latitude: -28.65
+Longitude: -56.01638888
+Altitude: 81.08
+Situacao: Operante
+Data Inicial: 2020-01-01
+Data Final: 2020-12-31
+Periodicidade da Medicao: Mensal
+
+Data Medicao;NUMERO DE DIAS COM PRECIP. PLUV, MENSAL (AUT)(número);PRECIPITACAO TOTAL, MENSAL (AUT)(mm);PRESSAO ATMOSFERICA, MEDIA MENSAL (AUT)(mB);TEMPERATURA MEDIA, MENSAL (AUT)(°C);VENTO, VELOCIDADE MAXIMA MENSAL (AUT)(m/s);VENTO, VELOCIDADE MEDIA MENSAL (AUT)(m/s);
+2020-01-31;6;106;1000,322043;26,016801;6,7;,170968;
+2020-02-29;7;133,8;1002,667816;25,080029;3,2;,08204;
+2020-03-31;6;29,2;1003,49879;25,845027;8,2;,247312;
+2020-04-30;3;36;1007,169444;20,249028;7,5;,695417;
+2020-05-31;7;49,8;1007,695238;16,444818;6,9;,476702;
+2020-06-30;5;null;1005,524213;18,85599;9;1,31155;
+2020-07-31;null;null;null;null;7,5;null;
+2020-08-31;null;null;null;null;6,7;null;
+2020-09-30;null;null;null;null;7,3;null;
+2020-10-31;null;null;null;null;8;null;
+2020-11-30;null;null;null;null;15;null;
+2020-12-31;3;null;null;null;9,9;null;
+

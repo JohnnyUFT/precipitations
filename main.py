@@ -1,17 +1,20 @@
 import os
-import csv
-import re
 import pandas as pd
-from sqlalchemy import create_engine
+from bd_config import (create_connection, insert_into_local,
+                       insert_into_data, close_connection)
+
+PATH = os.environ.get('PATH_DATA')
+DB_NAME = os.environ.get('DB_NAME')
 
 def get_meta_data(row):
-    return row[0].split(': ')[1].replace(' ', '').replace(':', '')
+    return row[0].split(': ')[1].replace(':', '')
 
 def read_file():
-    PATH = 'C:\\Users\\johnny.gomes\\Downloads\\thiago\\data'
     FILE_READ = 0
-    ROW_NUMBER = 0
 
+    # abre a conexao com o banco definido no .env
+    conn = create_connection(DB_NAME)
+    
     files = []
     # r=root, d=directories, f = files
     for r, d, f in os.walk(PATH):
@@ -27,30 +30,43 @@ def read_file():
         df_meta = pd.read_csv(f, sep=',|;', 
                   engine='python', header=None, nrows=9,)
         
-        meta_columns = ['nome','codigo_estacao','latitude','longitude','altitude','situacao',
-                       'data_inicial','data_final','periodicidade',]
-        
         df_meta = df_meta.apply(get_meta_data, axis=1)
-        df_meta = df_meta.rename({'0':'nome', '1':'codigo_estacao', '2':'latitude',
-                                  '3':'longitude', '4':'altitude', '5':'situacao',
-                                  '6':'data_inicial', '7':'data_final', '8':'periodicidade',}, axis=0)
-        df_meta.index = meta_columns
-        print(df_meta)
-        # print(df_meta.to_dict())
-        print('\n')
+        
+        # insert tabela local
+        last_row_id = insert_into_local(conn, tuple(df_meta))
         
         df_data = pd.read_csv(f, sep=',|;', 
-                  engine='python', header=None, skiprows=11,)
-        df_data.columns = ['data_medicao','dias_precip','mensal_aut','precipitacao_total',
-                       'mensal_aut_mb','pressao_atmosferica','media_mensal_aut',
-                       'temperatura_media','mensal_aut_c','vento','velocidade_maxima',
-                       'vento_rev','velocidade_media']
+                  engine='python', header=None, skiprows=11, 
+                  keep_default_na=True, na_values=['','null', 'Null', 'NULL'],
+                  on_bad_lines='warn')
         
-        print(df_data)
+        # if df_data.shape[1] == 13:
+        #     df_data = df_data.drop(12, axis=1)
 
+        # insert tabela data
+        for row in df_data.itertuples():
+            insert_into_data(conn, row[1:] + (last_row_id,))
+        
         FILE_READ += 1
-        if FILE_READ >= 3:  # just for fun
-                break
+        
+        # df_data.columns = ['local_id','data_medicao','dias_precip','mensal_aut','precip_total',
+        #                'mensal_aut_mb','pressao_atmosferica','media_mensal_aut',
+        #                'temperatura_media','mensal_aut_c','vento','velocidade_maxima',
+        #                'vento_rev','velocidade_media',]
+        # df_data['local_id'] = last_row_id
+        
+        # # print('\ndf origin', df_data.head())
+        # df_data1 = df_data.apply(tuple, axis=1)
+        # print('\ndf tuple', df_data1.head())
+        # for row in df_data1:
+        #     print('\nrow', row)
+        #     # insert tabela data
+        #     insert_into_data(conn, row)
+
+        # FILE_READ += 1
+        # if FILE_READ == 18:  # just for fun
+        #     close_connection(conn)
+        #     df_data.to_csv('df_data.csv', index=False)
 
 def main():
     read_file()

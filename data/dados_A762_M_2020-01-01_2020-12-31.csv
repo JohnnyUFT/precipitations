@@ -1,0 +1,24 @@
+Nome: DRACENA
+Codigo Estacao: A762
+Latitude: -21.45777777
+Longitude: -51.55222222
+Altitude: 720
+Situacao: Pane
+Data Inicial: 2020-01-01
+Data Final: 2020-12-31
+Periodicidade da Medicao: Mensal
+
+Data Medicao;NUMERO DE DIAS COM PRECIP. PLUV, MENSAL (AUT)(número);PRECIPITACAO TOTAL, MENSAL (AUT)(mm);PRESSAO ATMOSFERICA, MEDIA MENSAL (AUT)(mB);TEMPERATURA MEDIA, MENSAL (AUT)(°C);VENTO, VELOCIDADE MAXIMA MENSAL (AUT)(m/s);VENTO, VELOCIDADE MEDIA MENSAL (AUT)(m/s);
+2020-01-31;7;null;966,442898;26,756945;8,6;2,695698;
+2020-02-29;17;288,8;968,181322;25,43204;7,9;2,548801;
+2020-03-31;null;null;969,181659;26,4156;7,8;2,862249;
+2020-04-30;null;null;971,348915;null;9,1;2,584497;
+2020-05-31;null;null;null;null;7,2;null;
+2020-06-30;null;null;null;null;9,7;null;
+2020-07-31;null;null;null;null;7,3;null;
+2020-08-31;null;null;null;null;7,6;null;
+2020-09-30;null;null;null;null;8,2;null;
+2020-10-31;null;null;null;null;12;null;
+2020-11-30;null;null;null;null;12,3;null;
+2020-12-31;13;141,4;967,20742;26,073758;11,3;2,715771;
+

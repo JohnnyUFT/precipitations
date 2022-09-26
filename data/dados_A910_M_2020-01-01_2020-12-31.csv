@@ -1,0 +1,24 @@
+Nome: APIACAS
+Codigo Estacao: A910
+Latitude: -9.56333333
+Longitude: -57.3936111
+Altitude: 217.75
+Situacao: Pane
+Data Inicial: 2020-01-01
+Data Final: 2020-12-31
+Periodicidade da Medicao: Mensal
+
+Data Medicao;NUMERO DE DIAS COM PRECIP. PLUV, MENSAL (AUT)(número);PRECIPITACAO TOTAL, MENSAL (AUT)(mm);PRESSAO ATMOSFERICA, MEDIA MENSAL (AUT)(mB);TEMPERATURA MEDIA, MENSAL (AUT)(°C);VENTO, VELOCIDADE MAXIMA MENSAL (AUT)(m/s);VENTO, VELOCIDADE MEDIA MENSAL (AUT)(m/s);
+2020-01-31;19;null;986,550931;26,412732;4,8;1,034941;
+2020-02-29;22;303;986,901293;25,932615;4,6;,952011;
+2020-03-31;24;505,2;986,509233;25,976569;5,2;1,001233;
+2020-04-30;null;null;null;null;6,3;null;
+2020-05-31;null;null;null;null;6,1;null;
+2020-06-30;null;null;null;null;5,6;null;
+2020-07-31;null;null;null;null;4,7;null;
+2020-08-31;null;null;null;null;5,4;null;
+2020-09-30;null;null;null;null;4,2;null;
+2020-10-31;null;null;null;null;5,1;null;
+2020-11-30;null;null;null;null;6,9;null;
+2020-12-31;null;null;null;null;4,9;null;
+

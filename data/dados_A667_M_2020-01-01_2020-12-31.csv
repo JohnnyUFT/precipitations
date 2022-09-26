@@ -1,0 +1,24 @@
+Nome: SAQUAREMA - SAMPAIO CORREIA
+Codigo Estacao: A667
+Latitude: -22.8711111
+Longitude: -42.60888888
+Altitude: 26
+Situacao: Operante
+Data Inicial: 2020-01-01
+Data Final: 2020-12-31
+Periodicidade da Medicao: Mensal
+
+Data Medicao;NUMERO DE DIAS COM PRECIP. PLUV, MENSAL (AUT)(número);PRECIPITACAO TOTAL, MENSAL (AUT)(mm);PRESSAO ATMOSFERICA, MEDIA MENSAL (AUT)(mB);TEMPERATURA MEDIA, MENSAL (AUT)(°C);VENTO, VELOCIDADE MAXIMA MENSAL (AUT)(m/s);VENTO, VELOCIDADE MEDIA MENSAL (AUT)(m/s);
+2020-01-31;18;204,6;1009,43228;26,092411;7,8;1,599282;
+2020-02-29;13;187,4;1011,21578;25,827778;7,4;1,723167;
+2020-03-31;15;191;1013,268817;24,221505;4,7;1,520027;
+2020-04-30;9;40,6;1014,905417;22,949861;5,7;1,505278;
+2020-05-31;9;121,6;1015,973738;20,805241;5,5;1,444122;
+2020-06-30;5;null;null;21,198047;5,5;null;
+2020-07-31;null;null;null;null;9,1;null;
+2020-08-31;null;null;null;null;6,8;null;
+2020-09-30;null;null;null;null;5;null;
+2020-10-31;null;null;null;null;6,3;null;
+2020-11-30;null;null;null;null;7,7;null;
+2020-12-31;null;null;null;null;3,9;null;
+

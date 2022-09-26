@@ -1,0 +1,24 @@
+Nome: PICOS
+Codigo Estacao: A343
+Latitude: -7.0711111
+Longitude: -41.40416666
+Altitude: 232.91
+Situacao: Operante
+Data Inicial: 2020-01-01
+Data Final: 2020-12-31
+Periodicidade da Medicao: Mensal
+
+Data Medicao;NUMERO DE DIAS COM PRECIP. PLUV, MENSAL (AUT)(número);PRECIPITACAO TOTAL, MENSAL (AUT)(mm);PRESSAO ATMOSFERICA, MEDIA MENSAL (AUT)(mB);TEMPERATURA MEDIA, MENSAL (AUT)(°C);VENTO, VELOCIDADE MAXIMA MENSAL (AUT)(m/s);VENTO, VELOCIDADE MEDIA MENSAL (AUT)(m/s);
+2020-01-31;null;null;984,902823;26,661828;6,7;1,493011;
+2020-02-29;null;null;985,186207;26,338218;6,3;1,496264;
+2020-03-31;null;null;985,177016;26,099059;5,2;1,402957;
+2020-04-30;null;null;985,881984;null;4,9;1,342537;
+2020-05-31;null;null;986,853956;null;4,3;1,531198;
+2020-06-30;1;null;null;null;5,6;null;
+2020-07-31;null;null;null;null;5,9;null;
+2020-08-31;null;null;null;null;null;null;
+2020-09-30;null;null;null;null;null;null;
+2020-10-31;null;null;null;null;null;null;
+2020-11-30;null;null;null;null;null;null;
+2020-12-31;null;null;null;null;null;null;
+

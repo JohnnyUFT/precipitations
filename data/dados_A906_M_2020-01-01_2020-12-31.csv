@@ -1,0 +1,24 @@
+Nome: GUARANTA DO NORTE
+Codigo Estacao: A906
+Latitude: -9.9525
+Longitude: -54.89777777
+Altitude: 283.58
+Situacao: Pane
+Data Inicial: 2020-01-01
+Data Final: 2020-12-31
+Periodicidade da Medicao: Mensal
+
+Data Medicao;NUMERO DE DIAS COM PRECIP. PLUV, MENSAL (AUT)(número);PRECIPITACAO TOTAL, MENSAL (AUT)(mm);PRESSAO ATMOSFERICA, MEDIA MENSAL (AUT)(mB);TEMPERATURA MEDIA, MENSAL (AUT)(°C);VENTO, VELOCIDADE MAXIMA MENSAL (AUT)(m/s);VENTO, VELOCIDADE MEDIA MENSAL (AUT)(m/s);
+2020-01-31;null;null;979,004032;25,665323;4,2;,849597;
+2020-02-29;24;90,6;979,413649;25,29569;5,8;,61408;
+2020-03-31;31;122,2;979,047043;25,624059;3,9;,738979;
+2020-04-30;30;26,4;979,993333;25,576528;3,7;,545694;
+2020-05-31;null;null;981,042876;26,015726;4,7;,711156;
+2020-06-30;2;null;981,265661;null;4,4;,879788;
+2020-07-31;null;null;null;null;4,2;null;
+2020-08-31;null;null;null;null;4;null;
+2020-09-30;null;null;null;null;5,3;null;
+2020-10-31;null;null;null;null;5,6;null;
+2020-11-30;null;null;null;null;5,1;null;
+2020-12-31;null;null;null;null;null;null;
+

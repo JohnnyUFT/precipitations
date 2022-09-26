@@ -1,0 +1,24 @@
+Nome: GOIOERE
+Codigo Estacao: A825
+Latitude: -24.18388888
+Longitude: -53.04888888
+Altitude: 481
+Situacao: Operante
+Data Inicial: 2020-01-01
+Data Final: 2020-12-31
+Periodicidade da Medicao: Mensal
+
+Data Medicao;NUMERO DE DIAS COM PRECIP. PLUV, MENSAL (AUT)(número);PRECIPITACAO TOTAL, MENSAL (AUT)(mm);PRESSAO ATMOSFERICA, MEDIA MENSAL (AUT)(mB);TEMPERATURA MEDIA, MENSAL (AUT)(°C);VENTO, VELOCIDADE MAXIMA MENSAL (AUT)(m/s);VENTO, VELOCIDADE MEDIA MENSAL (AUT)(m/s);
+2020-01-31;17;115;956,527554;25,091935;null;null;
+2020-02-29;10;130,2;958,05273;25,365517;null;null;
+2020-03-31;6;53;959,479436;25,241935;null;null;
+2020-04-30;3;53,4;961,555278;21,46875;null;null;
+2020-05-31;8;85,6;962,636828;18,185484;null;null;
+2020-06-30;12;115,4;961,85125;19,7975;null;null;
+2020-07-31;7;66;962,369758;18,745161;null;null;
+2020-08-31;7;null;null;20,476316;null;null;
+2020-09-30;null;null;null;null;null;null;
+2020-10-31;null;null;null;null;null;null;
+2020-11-30;null;null;null;null;null;null;
+2020-12-31;null;null;null;null;null;null;
+

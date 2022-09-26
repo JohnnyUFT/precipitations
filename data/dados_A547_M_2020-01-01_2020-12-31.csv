@@ -1,0 +1,24 @@
+Nome: SAO ROMAO
+Codigo Estacao: A547
+Latitude: -16.36277777
+Longitude: -45.12388888
+Altitude: 490.29
+Situacao: Operante
+Data Inicial: 2020-01-01
+Data Final: 2020-12-31
+Periodicidade da Medicao: Mensal
+
+Data Medicao;NUMERO DE DIAS COM PRECIP. PLUV, MENSAL (AUT)(número);PRECIPITACAO TOTAL, MENSAL (AUT)(mm);PRESSAO ATMOSFERICA, MEDIA MENSAL (AUT)(mB);TEMPERATURA MEDIA, MENSAL (AUT)(°C);VENTO, VELOCIDADE MAXIMA MENSAL (AUT)(m/s);VENTO, VELOCIDADE MEDIA MENSAL (AUT)(m/s);
+2020-01-31;null;283,4;956,206452;26,104167;5,7;1,332392;
+2020-02-29;null;172,2;957,537931;25,962069;5,3;1,063075;
+2020-03-31;null;252,8;957,659822;24,546875;4,6;,969345;
+2020-04-30;null;null;null;null;null;null;
+2020-05-31;null;null;null;null;null;null;
+2020-06-30;null;null;null;null;null;null;
+2020-07-31;null;null;null;null;null;null;
+2020-08-31;null;null;null;null;null;null;
+2020-09-30;null;null;null;null;null;null;
+2020-10-31;null;null;956,3445;27,110333;6,1;1,6415;
+2020-11-30;null;94,4;957,003194;25,227917;8,7;1,363333;
+2020-12-31;null;216,4;956,476075;25,601479;4,6;1,14664;
+

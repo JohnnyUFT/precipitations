@@ -1,0 +1,24 @@
+Nome: SETE LAGOAS
+Codigo Estacao: A569
+Latitude: -19.45527777
+Longitude: -44.17333332
+Altitude: 719
+Situacao: Operante
+Data Inicial: 2020-01-01
+Data Final: 2020-12-31
+Periodicidade da Medicao: Mensal
+
+Data Medicao;NUMERO DE DIAS COM PRECIP. PLUV, MENSAL (AUT)(número);PRECIPITACAO TOTAL, MENSAL (AUT)(mm);PRESSAO ATMOSFERICA, MEDIA MENSAL (AUT)(mB);TEMPERATURA MEDIA, MENSAL (AUT)(°C);VENTO, VELOCIDADE MAXIMA MENSAL (AUT)(m/s);VENTO, VELOCIDADE MEDIA MENSAL (AUT)(m/s);
+2020-01-31;22;369;930,301613;24,218145;null;null;
+2020-02-29;18;214,4;932,199425;23,464511;7,3;1,756399;
+2020-03-31;11;277;932,495337;22,666954;6,7;1,858452;
+2020-04-30;5;null;null;22,269587;6,8;null;
+2020-05-31;1;null;935,775395;null;5,8;1,841903;
+2020-06-30;null;null;null;null;6,5;null;
+2020-07-31;null;null;null;null;6,9;null;
+2020-08-31;2;10;936,659274;18,897849;6,4;2,152957;
+2020-09-30;3;4,4;935,05;22,02468;7,1;2,120994;
+2020-10-31;null;null;null;null;null;null;
+2020-11-30;null;null;null;null;null;null;
+2020-12-31;8;null;null;23,790258;5;null;
+

@@ -1,0 +1,24 @@
+Nome: BREVES
+Codigo Estacao: A228
+Latitude: -1.68027777
+Longitude: -50.47805554
+Altitude: 11
+Situacao: Pane
+Data Inicial: 2020-01-01
+Data Final: 2020-12-31
+Periodicidade da Medicao: Mensal
+
+Data Medicao;NUMERO DE DIAS COM PRECIP. PLUV, MENSAL (AUT)(número);PRECIPITACAO TOTAL, MENSAL (AUT)(mm);PRESSAO ATMOSFERICA, MEDIA MENSAL (AUT)(mB);TEMPERATURA MEDIA, MENSAL (AUT)(°C);VENTO, VELOCIDADE MAXIMA MENSAL (AUT)(m/s);VENTO, VELOCIDADE MEDIA MENSAL (AUT)(m/s);
+2020-01-31;31;340,6;1010,596237;25,902957;3,5;,900941;
+2020-02-29;28;415;1010,744684;25,671839;3,4;,881466;
+2020-03-31;28;286,6;1010,538307;26,126882;3,1;,922581;
+2020-04-30;19;null;null;26,21557;3,9;null;
+2020-05-31;null;null;null;null;null;null;
+2020-06-30;null;null;null;null;null;null;
+2020-07-31;null;null;null;null;null;null;
+2020-08-31;null;null;null;null;null;null;
+2020-09-30;null;null;null;null;null;null;
+2020-10-31;null;null;null;null;null;null;
+2020-11-30;null;null;null;null;null;null;
+2020-12-31;null;null;null;null;null;null;
+

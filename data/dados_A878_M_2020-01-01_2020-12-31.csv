@@ -1,0 +1,24 @@
+Nome: MOSTARDAS
+Codigo Estacao: A878
+Latitude: -31.24833333
+Longitude: -50.90638888
+Altitude: 3.82
+Situacao: Operante
+Data Inicial: 2020-01-01
+Data Final: 2020-12-31
+Periodicidade da Medicao: Mensal
+
+Data Medicao;NUMERO DE DIAS COM PRECIP. PLUV, MENSAL (AUT)(número);PRECIPITACAO TOTAL, MENSAL (AUT)(mm);PRESSAO ATMOSFERICA, MEDIA MENSAL (AUT)(mB);TEMPERATURA MEDIA, MENSAL (AUT)(°C);VENTO, VELOCIDADE MAXIMA MENSAL (AUT)(m/s);VENTO, VELOCIDADE MEDIA MENSAL (AUT)(m/s);
+2020-01-31;8;null;1011,215315;24,755369;13,5;7,473117;
+2020-02-29;8;46,4;1013,737644;23,536638;15,2;6,737893;
+2020-03-31;8;27,2;1015,266667;23,757661;14;6,813674;
+2020-04-30;16;28,8;1016,254167;20,351528;15,7;6,481424;
+2020-05-31;null;null;1015,731317;16,870161;13,8;5,445223;
+2020-06-30;null;null;null;15,495893;13,4;null;
+2020-07-31;null;null;null;null;null;null;
+2020-08-31;null;null;null;null;null;null;
+2020-09-30;null;null;null;null;null;null;
+2020-10-31;null;null;null;null;null;null;
+2020-11-30;null;null;null;null;null;null;
+2020-12-31;null;null;null;null;null;null;
+

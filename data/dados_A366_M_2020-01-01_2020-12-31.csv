@@ -1,0 +1,24 @@
+Nome: OURICURI
+Codigo Estacao: A366
+Latitude: -7.88583333
+Longitude: -40.10277777
+Altitude: 457.85
+Situacao: Operante
+Data Inicial: 2020-01-01
+Data Final: 2020-12-31
+Periodicidade da Medicao: Mensal
+
+Data Medicao;NUMERO DE DIAS COM PRECIP. PLUV, MENSAL (AUT)(número);PRECIPITACAO TOTAL, MENSAL (AUT)(mm);PRESSAO ATMOSFERICA, MEDIA MENSAL (AUT)(mB);TEMPERATURA MEDIA, MENSAL (AUT)(°C);VENTO, VELOCIDADE MAXIMA MENSAL (AUT)(m/s);VENTO, VELOCIDADE MEDIA MENSAL (AUT)(m/s);
+2020-01-31;null;null;null;null;6,3;null;
+2020-02-29;null;null;null;null;7,3;null;
+2020-03-31;null;null;960,105473;null;6,9;null;
+2020-04-30;null;null;960,864961;null;6;null;
+2020-05-31;null;null;962,242528;24,486951;4,9;null;
+2020-06-30;null;null;963,025113;23,866616;5,7;null;
+2020-07-31;null;null;963,246729;23,679583;5,6;null;
+2020-08-31;null;0;962,963431;24,763837;6,9;null;
+2020-09-30;0;0;962,119722;26,312222;6,8;null;
+2020-10-31;null;null;null;28,612083;7,4;null;
+2020-11-30;null;null;null;null;6;null;
+2020-12-31;null;null;null;null;5,3;null;
+

@@ -1,0 +1,24 @@
+Nome: BALSAS
+Codigo Estacao: A204
+Latitude: -7.45555555
+Longitude: -46.02749999
+Altitude: 271.03
+Situacao: Operante
+Data Inicial: 2020-01-01
+Data Final: 2020-12-31
+Periodicidade da Medicao: Mensal
+
+Data Medicao;NUMERO DE DIAS COM PRECIP. PLUV, MENSAL (AUT)(número);PRECIPITACAO TOTAL, MENSAL (AUT)(mm);PRESSAO ATMOSFERICA, MEDIA MENSAL (AUT)(mB);TEMPERATURA MEDIA, MENSAL (AUT)(°C);VENTO, VELOCIDADE MAXIMA MENSAL (AUT)(m/s);VENTO, VELOCIDADE MEDIA MENSAL (AUT)(m/s);
+2020-01-31;24;244,4;980,88414;26,059543;5,8;,541532;
+2020-02-29;20;153,4;981,023994;26,09727;6,4;,538649;
+2020-03-31;27;391,6;981,043683;25,994355;5,8;,723656;
+2020-04-30;19;249,2;981,700404;26,272222;7,2;,721806;
+2020-05-31;3;null;982,302138;26,807955;5,1;,897464;
+2020-06-30;null;null;null;null;null;null;
+2020-07-31;null;null;null;null;null;null;
+2020-08-31;null;null;null;null;null;null;
+2020-09-30;null;null;null;null;null;null;
+2020-10-31;null;null;null;null;null;null;
+2020-11-30;null;null;null;null;null;null;
+2020-12-31;null;null;null;null;null;null;
+
