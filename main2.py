@@ -1,6 +1,6 @@
 # Caso 2: utilizacao de .csv unico com dados de varios locais
-# este caso deve ser utilizado a menos que o arquivo 'data/precipitacao_all'
-# esteja devidamente limpo e organizado.
+# este caso deve ser utilizado caso o arquivo 'data/prec_temp.csv' exista
+# e esteja devidamente limpo e organizado.
 
 import os
 import re
@@ -11,7 +11,6 @@ PATH = os.environ.get('PATH_DATA')
 FILE = os.environ.get('FILE_NAME')
 
 def clean_data(row):
-    # return row[0].split(': ')[1].replace(' ', '').replace(':', '')
     return row[0].split(': ')[1].replace(':', '')
 
 def remove_break_line(row):
@@ -32,30 +31,33 @@ def read_file():
                 if row_data[0].startswith('Nome:'):
                     row_data = clean_data(row_data)
                     # insert tabela local
-                    insert_into_local(conn, row_data)
+                    last_row_id = insert_into_local(conn, row_data)
                 elif row_data[0].startswith('Data'):
                     continue
                 elif row_data[0].startswith('201', 0, 4):
+                    row_data.append(last_row_id)
                     # insert tabela data
+                    print(row_data)
                     insert_into_data(conn, tuple(row_data))
                 
 
                 ROW_NUMBER += 1
                 
-                if ROW_NUMBER >= 30:  # just for fun
-                    close_connection(conn)
-                    return None
+                # if ROW_NUMBER >= 30:  # just for fun
+                #     close_connection(conn)
+                #     return None
 
         # sucesso ao fazer a leitura do arquivo: incrementa FILE_NUMBER
         FILE_READ += 1
 
-    except BaseException:
-        print('Erro ao ler arquivo ', file_to_read)
+    except Exception as e:
+        print(e)
+        print('Erro ao ler arquivo', FILE)
         print('Qtd arquivos lidos com sucesso: ', FILE_READ)
         
         close_connection(conn)
         
-        return []  # TODO: remover
+        return None  # TODO: remover
 
 
 def main():

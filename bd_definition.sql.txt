@@ -1,31 +1,13 @@
 CREATE TABLE IF NOT EXISTS "local" (
 	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
 	nome TEXT NOT NULL,
-	codigo_estacao TEXT,
-	latitude TEXT,
-	longitude TEXT,
-	altitude TEXT,
-	situacao TEXT,
-	data_inicial TEXT,
-	data_final TEXT,
-	periodicidade TEXT
 );
 
 CREATE TABLE IF NOT EXISTS "data" (
 	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
 	data_medicao TEXT,
-	dias_precip INTEGER,
-	mensal_aut INTEGER,
 	precip_total INTEGER,
-	mensal_aut_mb INTEGER,
-	pressao_atmosferica INTEGER,
-	media_mensal_aut REAL,
 	temperatura_media REAL,
-	mensal_aut_c REAL,
-	vento INTEGER,
-	velocidade_maxima INTEGER,
-	vento_rev INTEGER,
-	velocidade_media REAL,
 	local_id INTEGER,
     CONSTRAINT data_FK FOREIGN KEY (local_id) REFERENCES "local"(id)
 );

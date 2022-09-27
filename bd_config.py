@@ -6,14 +6,16 @@ DB_NAME = os.environ.get('DB_NAME')
 
 def insert_into_local(conn, values):
     ''' insert data into table '''
-    sql = f'''INSERT INTO local (nome) VALUES (?)'''
+    print(values)
+    sql = f'''INSERT INTO local (nome) VALUES ('{values}')'''
     cur = conn.cursor()
-    cur.execute(sql, values)
+    cur.execute(sql)
     conn.commit()
     return cur.lastrowid
 
 def insert_into_data(conn, values):
     ''' insert data into table '''
+    print(values)
     sql = f'''INSERT INTO data (data_medicao, precip_total, temperatura_media, 
                 local_id) VALUES (?, ?, ?, ?)'''
     cur = conn.cursor()
@@ -28,7 +30,7 @@ def create_table_local():
     c.execute('''
         CREATE TABLE IF NOT EXISTS "local" (
             id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-            nome TEXT NOT NULL,
+            nome TEXT NOT NULL
     );
         ''')
     conn.commit()
