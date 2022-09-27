@@ -38,11 +38,14 @@ def read_file():
         df_data = pd.read_csv(f, sep=',|;', 
                   engine='python', header=None, skiprows=11, 
                   keep_default_na=True, na_values=['','null', 'Null', 'NULL'],
-                  on_bad_lines='warn')
+                  on_bad_lines='warn',
+                  usecols=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],)
         
+        # # elimina ultima coluna:
         # if df_data.shape[1] == 13:
-        #     df_data = df_data.drop(12, axis=1)
-
+        #     df_data.drop([11,12], axis=1, inplace=True)
+        print(df_data.shape)
+        
         # insert tabela data
         for row in df_data.itertuples():
             insert_into_data(conn, row[1:] + (last_row_id,))

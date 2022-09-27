@@ -17,8 +17,8 @@ def insert_into_data(conn, values):
     ''' insert data into table '''
     sql = f'''INSERT INTO data (data_medicao, dias_precip, mensal_aut, precip_total,
                     mensal_aut_mb, pressao_atmosferica, media_mensal_aut,
-                temperatura_media, mensal_aut_c, vento, velocidade_maxima,
-                vento_rev, velocidade_media, local_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'''
+                temperatura_media, mensal_aut_c, vento, velocidade_maxima, 
+                local_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'''
     cur = conn.cursor()
     cur.execute(sql, values)
     conn.commit()
