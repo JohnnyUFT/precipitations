@@ -6,8 +6,7 @@ DB_NAME = os.environ.get('DB_NAME')
 
 def insert_into_local(conn, values):
     ''' insert data into table '''
-    sql = f'''INSERT INTO local (nome, codigo_estacao, latitude, longitude, altitude, situacao,
-        data_inicial, data_final, periodicidade) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)'''
+    sql = f'''INSERT INTO local (nome) VALUES (?)'''
     cur = conn.cursor()
     cur.execute(sql, values)
     conn.commit()
@@ -15,10 +14,8 @@ def insert_into_local(conn, values):
 
 def insert_into_data(conn, values):
     ''' insert data into table '''
-    sql = f'''INSERT INTO data (data_medicao, dias_precip, mensal_aut, precip_total,
-                    mensal_aut_mb, pressao_atmosferica, media_mensal_aut,
-                temperatura_media, mensal_aut_c, vento, velocidade_maxima, 
-                local_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'''
+    sql = f'''INSERT INTO data (data_medicao, precip_total, temperatura_media, 
+                local_id) VALUES (?, ?, ?, ?)'''
     cur = conn.cursor()
     cur.execute(sql, values)
     conn.commit()
@@ -30,16 +27,8 @@ def create_table_local():
     c = conn.cursor()
     c.execute('''
         CREATE TABLE IF NOT EXISTS "local" (
-        id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-        nome TEXT NOT NULL,
-        codigo_estacao TEXT,
-        latitude TEXT,
-        longitude TEXT,
-        altitude TEXT,
-        situacao TEXT,
-        data_inicial TEXT,
-        data_final TEXT,
-        periodicidade TEXT
+            id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+            nome TEXT NOT NULL,
     );
         ''')
     conn.commit()
@@ -51,22 +40,12 @@ def create_table_data():
     c = conn.cursor()
     c.execute('''
         CREATE TABLE IF NOT EXISTS "data" (
-        id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-        data_medicao TEXT,
-        dias_precip INTEGER,
-        mensal_aut INTEGER,
-        precip_total INTEGER,
-        mensal_aut_mb INTEGER,
-        pressao_atmosferica INTEGER,
-        media_mensal_aut REAL,
-        temperatura_media REAL,
-        mensal_aut_c REAL,
-        vento INTEGER,
-        velocidade_maxima INTEGER,
-        vento_rev INTEGER,
-        velocidade_media REAL,
-        local_id INTEGER,
-        CONSTRAINT data_FK FOREIGN KEY (local_id) REFERENCES "local"(id)
+            id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+            data_medicao TEXT,
+            precip_total INTEGER,
+            temperatura_media REAL,
+            local_id INTEGER,
+            CONSTRAINT data_FK FOREIGN KEY (local_id) REFERENCES "local"(id)
     );''')
     conn.commit()
     conn.close()
