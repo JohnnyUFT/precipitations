@@ -6,7 +6,6 @@ DB_NAME = os.environ.get('DB_NAME')
 
 def insert_into_local(conn, values):
     ''' insert data into table '''
-    print(values)
     sql = f'''INSERT INTO local (nome) VALUES ('{values}')'''
     cur = conn.cursor()
     cur.execute(sql)
@@ -15,7 +14,6 @@ def insert_into_local(conn, values):
 
 def insert_into_data(conn, values):
     ''' insert data into table '''
-    print(values)
     sql = f'''INSERT INTO data (data_medicao, precip_total, temperatura_media, 
                 local_id) VALUES (?, ?, ?, ?)'''
     cur = conn.cursor()
@@ -44,7 +42,7 @@ def create_table_data():
         CREATE TABLE IF NOT EXISTS "data" (
             id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
             data_medicao TEXT,
-            precip_total INTEGER,
+            precip_total REAL,
             temperatura_media REAL,
             local_id INTEGER,
             CONSTRAINT data_FK FOREIGN KEY (local_id) REFERENCES "local"(id)

@@ -4,6 +4,8 @@
 
 import os
 import re
+import csv
+from unicodedata import decimal
 from bd_config import create_connection, insert_into_local, insert_into_data, close_connection
 
 DB_NAME = os.environ.get('DB_NAME')
@@ -12,6 +14,9 @@ FILE = os.environ.get('FILE_NAME')
 
 def clean_data(row):
     return row[0].split(': ')[1].replace(':', '')
+
+def remove_null(row):
+    return row.replace('null', '')
 
 def remove_break_line(row):
     return row.replace('\n', '')
@@ -24,28 +29,31 @@ def read_file():
     
     try:
         file_to_read = f'{PATH}\\{FILE}'
-        with open(file_to_read, mode="r") as infile:
+        with open(file_to_read, mode="r",) as infile:
 
             for row in infile:
+                print('\nraw:',row)
                 row_data = re.split(',|;', row)
+                
                 if row_data[0].startswith('Nome:'):
                     row_data = clean_data(row_data)
-                    # insert tabela local
+                    # print(row_data)
                     last_row_id = insert_into_local(conn, row_data)
                 elif row_data[0].startswith('Data'):
                     continue
                 elif row_data[0].startswith('201', 0, 4):
+                    row_data[2] = remove_break_line(row_data[2])
+                    row_data[1] = remove_null(row_data[1])
                     row_data.append(last_row_id)
-                    # insert tabela data
-                    print(row_data)
+                    # print(row_data)
                     insert_into_data(conn, tuple(row_data))
                 
 
                 ROW_NUMBER += 1
                 
-                # if ROW_NUMBER >= 30:  # just for fun
-                #     close_connection(conn)
-                #     return None
+                if ROW_NUMBER >= 50:  # just for fun
+                    close_connection(conn)
+                    return None
 
         # sucesso ao fazer a leitura do arquivo: incrementa FILE_NUMBER
         FILE_READ += 1

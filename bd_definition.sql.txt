@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS "local" (
 CREATE TABLE IF NOT EXISTS "data" (
 	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
 	data_medicao TEXT,
-	precip_total INTEGER,
+	precip_total REAL,
 	temperatura_media REAL,
 	local_id INTEGER,
     CONSTRAINT data_FK FOREIGN KEY (local_id) REFERENCES "local"(id)
